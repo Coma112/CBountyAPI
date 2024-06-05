@@ -29,3 +29,22 @@ java {
     }
 }
 
+publishing {
+    publications {
+        bar(MavenPublication) {
+            from components.java
+            groupId = 'coma112'
+            artifactId = 'CBountyAPI'
+            version = '1.0'
+        }
+    }
+
+    repositories {
+        maven {
+            name = 'jitpack'
+            url = 'https://jitpack.io'
+        }
+    }
+}
+
+

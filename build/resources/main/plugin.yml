@@ -1,0 +1,4 @@
+name: CBountyAPI
+version: '${version}'
+main: coma112.cbountyapi.CBountyAPI
+api-version: '1.20'
