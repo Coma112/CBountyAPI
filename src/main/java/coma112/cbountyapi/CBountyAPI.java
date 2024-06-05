@@ -5,13 +5,10 @@ import lombok.Getter;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class CBountyAPI extends JavaPlugin {
-    @Getter private static CBounty cbounty;
-    @Getter private static CBountyAPI instance;
+    @Getter private static CBounty plugin;
 
     @Override
     public void onEnable() {
-        instance = this;
-
-        cbounty = new CBounty();
+        plugin = CBounty.getInstance();
     }
 }
