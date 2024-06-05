@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'maven-publish'
+    id 'io.freefair.lombok' version "8.6"
 }
 
 group = 'coma112'
@@ -20,6 +21,7 @@ repositories {
 
 dependencies {
     compileOnly "io.papermc.paper:paper-api:1.20.4-R0.1-SNAPSHOT"
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.32'
     implementation files('libs/CBounty-3.0-dev-all.jar')
 }
 
